@@ -2,7 +2,7 @@
   "name": "amp",
   "version": "1.0.0",
   "description": "Binary.com AMP landing page",
-  "main": "usdb.js",
+  "main": "amp.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
