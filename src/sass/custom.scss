@@ -1,0 +1,121 @@
+/* stylelint-disable color-no-hex */
+.topbar {
+    background-color: #2a3052;
+    padding: 12px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+}
+
+.header {
+    display: flex;
+    min-height: 60vh;
+    padding: 20px;
+    padding-top: 160px;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(42, 48, 82, 0.6), rgba(42, 48, 82, 0.1)), url('assets/images/header-img-min.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.ft-icon {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    color: #e98024;
+    margin: 0;
+    margin-top: 40px;
+    letter-spacing: -1px;
+}
+
+.cta {
+    margin-top: 60px;
+}
+
+.section-title {
+    margin-bottom: 45px;
+    font-size: 36px;
+}
+
+.video {
+    width: 800px;
+    max-width: 100%;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.step {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 40px;
+    background-color: #e98024;
+    color: #ffffff;
+    margin-top: -20px;
+    padding: 0px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title-xl {
+    font-weight: 300;
+    font-size: 36px;
+    margin: 0;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.bottom-md {
+    margin-bottom: 30px;
+}
+
+.divider-md {
+    height: 30px;
+}
+
+.top-border {
+    border-top: 1px solid #f2f2f2;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+/* stylelint-enable color-no-hex */
+
+@media screen and (max-width: 992px) {
+    .md-center {
+        text-align: center;
+    }
+    .md-v-pading-sm {
+        padding: 20px;
+    }
+    .logo {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .step {
+        margin-top: 20px;
+    }
+    .top-border {
+        border: none;
+    }
+    .md-hide {
+        display: none;
+    }
+}
+@media screen and (max-width: 500px) {
+    .button, .button-secondary {
+        display: block;
+        margin: 5px;
+    }
+}

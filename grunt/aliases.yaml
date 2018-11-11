@@ -1,0 +1,31 @@
+default:
+  - 'stylelint'
+  - 'sass'
+  - 'postcss'
+  - 'cssmin'
+  - 'svgmin'
+  - 'imagemin'
+  - 'copy'
+  - 'includes'
+  - 'connect:livereload'
+  - 'watch'
+
+dev:
+  - 'stylelint'
+  - 'sass'
+  - 'postcss'
+  - 'cssmin'
+  - 'svgmin'
+  - 'imagemin'
+  - 'copy'
+  - 'includes'
+  - 'htmlmin' 
+  - 'connect:livereload'
+  - 'watch'
+
+serve:
+  - 'connect:livereload'
+  - 'watch'
+  
+deploy:
+  - 'buildcontrol' 
