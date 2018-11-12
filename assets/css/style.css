@@ -564,7 +564,7 @@ table {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-height: 80vh;
+  min-height: 100vh;
   padding: 20px;
   padding-top: 160px;
   -webkit-box-pack: center;
@@ -618,7 +618,7 @@ table {
 
 .title-xl {
   font-weight: 300;
-  font-size: 36px;
+  font-size: 48px;
   margin: 0; }
 
 .center-text {
