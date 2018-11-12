@@ -1,12 +1,12 @@
 /* stylelint-disable color-no-hex */
 .topbar {
-    background-color: #2a3052;
-    padding: 12px 0;
-    position: fixed;
-    top: 0;
+    position: absolute;
+    padding: 15px 0;
+    top: 10px;
     left: 0;
     width: 100%;
     z-index: 9;
+    background: transparent;
 }
 
 .header {
