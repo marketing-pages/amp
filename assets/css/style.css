@@ -621,6 +621,11 @@ table {
   font-size: 48px;
   margin: 0; }
 
+.title-md {
+  font-weight: 300;
+  font-size: 36px;
+  margin: 0; }
+
 .center-text {
   text-align: center; }
 
