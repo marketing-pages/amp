@@ -1,7 +1,7 @@
 module.exports = function (grunt) {
   return {
     html: {
-      files: ['src/*.html'],
+      files: ['src/**/*.html'],
       tasks: ['copy', 'includes'],
     },
     css: {
