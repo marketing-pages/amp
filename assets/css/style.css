@@ -638,6 +638,9 @@ table {
 .top-border {
   border-top: 1px solid #f2f2f2; }
 
+.mt-20 {
+  margin-top: 20px; }
+
 .mt-40 {
   margin-top: 40px; }
 
@@ -666,9 +669,3 @@ table {
   .button, .button-secondary {
     display: block;
     margin: 5px; } }
-
-@media only screen and (max-width: 1024px) {
-  .footer-img-col {
-    -webkit-box-ordinal-group: 0;
-    -ms-flex-order: -1;
-    order: -1; } }
