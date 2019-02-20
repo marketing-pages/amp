@@ -5,7 +5,7 @@ module.exports = {
         dest: 'dist/',
         options: {
           flatten: true,
-          includePath: 'dist/assets/css',
+          includePath: ['dist/assets/css'],
         }
       }
 };

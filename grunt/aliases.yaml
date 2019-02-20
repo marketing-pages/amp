@@ -4,28 +4,21 @@ default:
   - 'postcss'
   - 'cssmin'
   - 'svgmin'
-  - 'imagemin'
+  - 'image'
   - 'copy'
   - 'includes'
+  - 'htmlmin'
   - 'connect:livereload'
   - 'watch'
-
-dev:
+  
+deploy:
   - 'stylelint'
   - 'sass'
   - 'postcss'
   - 'cssmin'
   - 'svgmin'
-  - 'imagemin'
+  - 'image'
   - 'copy'
   - 'includes'
-  - 'htmlmin' 
-  - 'connect:livereload'
-  - 'watch'
-
-serve:
-  - 'connect:livereload'
-  - 'watch'
-  
-deploy:
+  - 'htmlmin'
   - 'buildcontrol' 
