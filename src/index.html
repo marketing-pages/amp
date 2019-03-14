@@ -2,15 +2,15 @@
 <html amp lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Binaryfx.io | Forex and CFD trading with MetaTrader 5 (MT5) </title>
-    <link rel="icon" href="https://binaryfx.io/assets/images/binary-icon.png" sizes="57x57"/>
-    <meta name="description" content="Trade Forex, CFDs and crypto on MT5 with a free online trading account. Learn to trade on a popular trading software MetaTrader 5 (MT5).">
-    <link rel="canonical" href="https://binaryfx.io">
-    <meta property="og:title" content="Binaryfx.io | Forex and CFD trading with MetaTrader 5 (MT5)" />
+    <title>Automate your binary options trading strategies with Binary Bot</title>
+    <link rel="icon" href="assets/images/binary-icon.png" sizes="57x57"/>
+    <meta name="description" content="Design your own strategy the way you want with our cutting-edge automated trading platform. Craft from scratch or customise ready-made strategies and let our auto trader do all the work for you. Trade with Binary Bot now.">
+    <link rel="canonical" href="https://binarybot.me">
+    <meta property="og:title" content="Automate your binary options trading strategies with Binary Bot" />
 	<meta property="og:type" content="website" />
-	<meta property="og:description" content="Trade Forex, CFDs and crypto on MT5 with a free online trading account. Learn to trade on a popular trading software MetaTrader 5 (MT5)." />
-	<meta property="og:url" content="https://binaryfx.io" />
-	<meta property="og:image" content="https://binaryfx.io/assets/images/binary-smart-trader-xl.png" />
+	<meta property="og:description" content="Design your own strategy the way you want with our cutting-edge automated trading platform. Craft from scratch or customise ready-made strategies and let our auto trader do all the work for you. Trade with Binary Bot now." />
+	<meta property="og:url" content="https://binarybot.me" />
+	<meta property="og:image" content="https://binarybot.me/assets/images/binary-smart-trader-xl.png" />
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <link rel="preconnect" href="https://www.youtube.com">
     <link rel="preconnect" href="https://www.googletagmanager.com">
@@ -21,7 +21,8 @@
     <script async src="https://cdn.ampproject.org/v0.js"></script>
     <script async custom-element="amp-dynamic-css-classes" src="https://cdn.ampproject.org/v0/amp-dynamic-css-classes-0.1.js"></script>
     <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,900" rel="stylesheet">
+    <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
     <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
     <script async custom-element="amp-position-observer" src="https://cdn.ampproject.org/v0/amp-position-observer-0.1.js"></script>
     <script async custom-element="amp-animation" src="https://cdn.ampproject.org/v0/amp-animation-0.1.js"></script>
@@ -34,11 +35,11 @@
         "@type": "NewsArticle",
         "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://binaryfx.io"
+        "@id": "https://binarybot.me"
         },
-        "headline": "Binaryfx.io | Forex and CFD trading with MetaTrader 5 (MT5) ",
+        "headline": "Automate your binary options trading strategies with Binary Bot",
         "image": [
-            "https://binaryfx.io/assets/images/binary-smart-trader-xl.png.png"
+            "https://binarybot.me/assets/images/binary-smart-trader-xl.png.png"
         ],
         "datePublished": "2019-01-04T01:00:00-08:00",
         "dateModified": "2019-01-04T01:00:00-08:00",
@@ -54,7 +55,7 @@
         "url": "https://binaryfx.io/assets/images/binary-icon.png"
         }
     },
-        "description": "Trade Forex, CFDs and crypto on MT5 with a free online trading account. Learn to trade on a popular trading software MetaTrader 5 (MT5)"
+        "description": "Design your own strategy the way you want with our cutting-edge automated trading platform. Craft from scratch or customise ready-made strategies and let our auto trader do all the work for you. Trade with Binary Bot now."
     }
     </script>
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -114,349 +115,79 @@
                 layout="nodisplay">
             </amp-position-observer>
         </div>
-        <div id="top-page"></div>
-        <div class="header">
-            <div class="topbar">
-                <div class="content">
-                    <div class="grid">
-                        <div class="col col-3 col-lg">
+        <div id="page-top"></div>
+
+        <amp-sidebar id="sidebar-left" class="page-sidebar" layout="nodisplay" side="left">
+            <button on="tap:sidebar-left.close">Close sidebar</button>
+            <h3>Sidebar</h3>
+                <ul>
+                    <li><a on="tap:what-is-binary-bot.scrollTo">What is Binary Bot?</a></li>
+                    <li><a on="tap:in-numbers.scrollTo">In numbers</a></li>
+                    <li><a on="tap:advantages.scrollTo">Advantages</a></li>
+                    <li><a on="tap:features.scrollTo">Features</a></li>
+                    <li><a on="tap:how-it-works.scrollTo">How it works</a></li>
+                    <li><a on="tap:strategies.scrollTo">Strategies</a></li>
+                </ul>
+        </amp-sidebar>
+        
+            <div class="topbar fixed primary-bg-color">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
                             <div class="logo">
                                 <amp-img src=/assets/svg/binary_logo_light.svg width=250 height=50 alt="Binary.com"><div fallback>Binary.com</div></amp-img>
                             </div>
-                        </div>
-                        <div class="col col-lg">
-                            <div class="language">
-                                <amp-img src=/assets/images/grid-world.png width=16 height=16 alt="Indonesia"><div fallback>Binary.com</div></amp-img>
-                                <a class="content-inverse-color" href="/id/">Indonesia</a>
+                            <div class="main-nav">
+                                <div class="header-nav">
+                                    <a on="tap:what-is-binary-bot.scrollTo">What is Binary Bot?</a>
+                                    <a on="tap:in-numbers.scrollTo">In numbers</a>
+                                    <a on="tap:advantages.scrollTo">Advantages</a>
+                                    <a on="tap:features.scrollTo">Features</a>
+                                    <a on="tap:how-it-works.scrollTo">How it works</a>
+                                    <a on="tap:strategies.scrollTo">Strategies</a>
+                                </div>
+
+                                <div class="language-nav">
+                                    <span class="active-language language-icon icon-uk "></span>
+                                    <span class="language-divider"></span>
+                                    <a href="/id/"><span class="language-icon icon-id"></span></a>
+                                </div>
                             </div>
-                            <div class="nav">
-                                <a on="tap:what-is-mt5.scrollTo">What is MT5?</a>
-                                <a on="tap:mt4-mt5.scrollTo">MT4 vs MT5</a>
-                                <a on="tap:types-of-mt5-accounts.scrollTo">Types of MT5 accounts</a>
-                                <a on="tap:mt5-account-signup.scrollTo">How to sign up?</a>
-                                <a on="tap:learn-mt5.scrollTo">Learn MT5</a>
-                            </div>
+                            <div role="button" aria-label="open sidebar" on="tap:sidebar-left.toggle" tabindex="0" class="mobile-menu-button">☰</div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="center-text header-content">
-                <div class="content">
-                    <div class="grid grid-center">
-                        <div class="col col-10 col-lg">
-                            <h1 class="title-2xl content-inverse-color"><strong>Trade Forex, CFDs</strong> and more with <strong>MetaTrader 5 (MT5)</strong></h1>
+            
+        <div class="header">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <h1 class="content-inverse-color title-2xl ft-900"><strong>Execute automatic trades with Binary Bot —<span class="block-element">your automated trading solution</span></strong></h1>
+                        <div class="cta">   
+                            <a class="button button-xl" href="https://www.binary.com/en/home.html?account_tabs=mt5&market_tabs=binary">Get Started</a>
                         </div>
                     </div>
-                </div>
-                <div class="cta">   
-                    <a class="button button-xl" href="https://www.binary.com/en/home.html?account_tabs=mt5&market_tabs=binary">Get Started Now</a>
+                    <div class="col-lg-6">
+                        <amp-img src=/assets/images/binary-bot.png width=805 height=512 alt="BinaryBot"><div fallback>BinaryBot</div></amp-img>
+                    </div>
                 </div>
             </div>
         </div>
-        <div id="what-is-mt5" class="section center-text">
-            <div class="content">
-                <div class="grid grid-center">
-                    <div class="col">
-                        <h2 class="section-title primary-color">What is MetaTrader 5 (MT5)?</h2>
+        <div class="section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
                         <div class="video">
-                            <amp-youtube width="560" title="Forex trading at a glance" height="315" layout="responsive" data-videoid="jwDjsXxjXPo"></amp-youtube>
+                            <amp-youtube width="560" title="Get started with binary options trading now" height="315" layout="responsive" data-videoid="j94uSQ0rm7g"></amp-youtube>
                         </div>
                     </div>
-                </div>
-                <div class="grid grid-center">
-                    <div class="col col-12">
-                        <p class="bottom-xl title-sm mt-40">Built with the latest in trading technology, <strong>MetaTrader 5 (MT5)</strong> is a free online trading software that offers you more online trading capabilities to trade on world markets.</p>
+                    <div class="col-lg-6">
                     </div>
                 </div>
             </div>
         </div>
-        <div class="section center-text fill-bg-color">
-            <div class="content">
-                <h2 class="primary-color title-md bottom-xl">Why choose the Binary.com MT5 platform</h2>
-                <div class="grid grid-center">
-                    <div class="col col-4 col-md col-ico">
-                        <amp-img src=/assets/svg/experience-trading.svg width=80 height=80 alt="More possibilities to profit with MT5"><div fallback>More possibilities to profit with MT5</div></amp-img>
-                        <p>If you are an experienced trader, this free platform opens up more possibilities for you to profit from online trading.</p>
-                    </div>
-                    <div class="col col-1 col-md"></div>
-                    <div class="col col-4 col-md col-ico">
-                        <amp-img src=/assets/svg/most-popular.svg width=80 height=80 alt="MT5 is a popular trading software"><div fallback>MT5 is a popular trading software</div></amp-img>
-                        <p>MT5 is an industry standard trading software used by millions of traders around the world.</p>
-                    </div>
-                </div>
-                <div class="divider-md md-hide"></div>
-                <div class="grid grid-center">
-                    <div class="col col-4 col-md col-ico">
-                        <amp-img src=/assets/svg/charts-news.svg width=80 height=80 alt="Charts, news and analysis with MT5"><div fallback>Charts, news and analysis with MT5</div></amp-img>
-                        <p>MT5 gives you charts and financial news, enabling precise analysis and forecasting.</p>
-                    </div>
-                    <div class="col col-1 col-md"></div>
-                    <div class="col col-4 col-md col-ico">
-                        <amp-img src=/assets/svg/MQL5.svg width=80 height=80 alt="More resources with MQL5 and MT5"><div fallback>Download online trading resources for free</div></amp-img>
-                        <p>Be a part of the MQL5.community where you can interact with other traders and download online trading resources for free.</p>
-                    </div>
-                </div>
-                <p class="mt-40"><a class="button button-xl" href="https://www.binary.com/en/home.html?account_tabs=mt5&market_tabs=binary">Trade on MT5 now</a></p>
-             </div>
-        </div>
-        <div class="content">
-            <div class="section-row separator-line-thin-gray"></div>
-        </div> 
-        <div id="mt4-mt5" class="section center-text">
-            <div class="content">
-                <h2 class="section-title primary-color">Differences between MetaTrader 4 (MT4) and MT5</h2>
-                <div class="grid grid-center">
-                    <div class="col col-6 primary-bg-color content-inverse-color right-white-border">
-                    </div>
-                    <div class="col col-3 primary-bg-color content-inverse-color right-white-border">
-                        <p>MT5</p>
-                    </div>
-                    <div class="col col-3 primary-bg-color content-inverse-color right-white-border">
-                        <p>MT4</p>
-                    </div>
-                </div>
-                <div class="grid grid-center">
-                    <div class="col col-6 fill-bg-color right-white-border col-label">
-                        <p>Partial order filling policies</p>
-                    </div>
-                    <div class="col col-3 fill-bg-color right-white-border">
-                        <p>Yes</p>
-                    </div>
-                    <div class="col col-3 fill-bg-color right-white-border">
-                        <p>No</p>
-                    </div>
-                </div>
-                <div class="grid grid-center">
-                    <div class="col col-6 dark-grey-bg right-white-border col-label">
-                        <p>Pending order types</p>
-                    </div>
-                    <div class="col col-3 dark-grey-bg right-white-border">
-                        <p>6</p>
-                    </div>
-                    <div class="col col-3 dark-grey-bg right-white-border">
-                        <p>4</p>
-                    </div>
-                </div>
-                <div class="grid grid-center">
-                    <div class="col col-6 fill-bg-color right-white-border col-label">
-                        <p>Depth of market</p>
-                    </div>
-                    <div class="col col-3 fill-bg-color right-white-border">
-                        <p>Yes</p>
-                    </div>
-                    <div class="col col-3 fill-bg-color right-white-border">
-                        <p>No</p>
-                    </div>
-                </div>
-                <div class="grid grid-center">
-                    <div class="col col-6 dark-grey-bg right-white-border col-label">
-                        <p>Time & sales (exchange data)</p>
-                    </div>
-                    <div class="col col-3 dark-grey-bg right-white-border">
-                        <p>Yes</p>
-                    </div>
-                    <div class="col col-3 dark-grey-bg right-white-border">
-                        <p>No</p>
-                    </div>
-                </div>
-                <div class="grid grid-center">
-                    <div class="col col-6 fill-bg-color right-white-border col-label">
-                        <p>Technical indicators</p>
-                    </div>
-                    <div class="col col-3 fill-bg-color right-white-border">
-                        <p>38</p>
-                    </div>
-                    <div class="col col-3 fill-bg-color right-white-border">
-                        <p>30</p>
-                    </div>
-                </div>
-                <div class="grid grid-center">
-                    <div class="col col-6 dark-grey-bg right-white-border col-label">
-                        <p>Graphical objects</p>
-                    </div>
-                    <div class="col col-3 dark-grey-bg right-white-border">
-                        <p>44</p>
-                    </div>
-                    <div class="col col-3 dark-grey-bg right-white-border">
-                        <p>31</p>
-                    </div>
-                </div>
-                <div class="grid grid-center">
-                    <div class="col col-6 fill-bg-color right-white-border col-label">
-                        <p>Timeframes</p>
-                    </div>
-                    <div class="col col-3 fill-bg-color right-white-border">
-                        <p>21</p>
-                    </div>
-                    <div class="col col-3 fill-bg-color right-white-border">
-                        <p>9</p>
-                    </div>
-                </div>
-                <div class="grid grid-center">
-                    <div class="col col-6 dark-grey-bg right-white-border col-label">
-                        <p>Economic Calendar</p>
-                    </div>
-                    <div class="col col-3 dark-grey-bg right-white-border">
-                        <p>Yes</p>
-                    </div>
-                    <div class="col col-3 dark-grey-bg right-white-border">
-                        <p>No</p>
-                    </div>
-                </div>
-                <div class="grid grid-center">
-                    <div class="col col-6 fill-bg-color right-white-border col-label">
-                        <p>Transfer funds between accounts</p>
-                    </div>
-                    <div class="col col-3 fill-bg-color right-white-border">
-                        <p>Yes</p>
-                    </div>
-                    <div class="col col-3 fill-bg-color right-white-border">
-                        <p>No</p>
-                    </div>
-                </div>
-                <div class="grid grid-center">
-                    <div class="col col-6 dark-grey-bg right-white-border col-label">
-                        <p>Supported markets</p>
-                    </div>
-                    <div class="col col-3 dark-grey-bg right-white-border">
-                        <p>Forex, futures, options, stocks, bonds</p>
-                    </div>
-                    <div class="col col-3 dark-grey-bg right-white-border">
-                        <p>Forex</p>
-                    </div>
-                </div>
-                <p class="mt-40"><a class="button button-xl" href="https://www.binary.com/en/home.html?account_tabs=mt5&market_tabs=binary">Get MT5 Now</a></p>
-            </div>
-        </div>
-        <div class="content">
-            <div class="section-row separator-line-thin-gray"></div>
-        </div> 
-        <div id="types-of-mt5-accounts" class="section center-text">
-            <div class="content">
-                <h2 class="section-title primary-color">Types of MT5 accounts</h2>
-                <p class="section-subtitle">Binary.com offers different account types to cater to the diverse needs of new and experienced traders. Each account provides you with unique opportunities to trade financial instruments.</p>
-                <div class="grid grid-center">
-                    <div class="col col-3 col-md col-ico">
-                        <amp-img src=/assets/svg/standard-account.svg width=88 height=88 alt="Standard MT5 account"><div fallback>Standard MT5 account</div></amp-img>
-                        <h3 class="col-title ft-bold">Standard MT5 account</h3>
-                        <p>Suitable for both new and experienced traders. With mid-range leverage and variable spreads that provide flexibility for whatever position you wish to take in the market.</p>
-                    </div>
-                    <div class="col col-1 col-md"></div>
-                    <div class="col col-3 col-md col-ico">
-                        <amp-img src=/assets/svg/advanced-account.svg width=88 height=88 alt="Advanced MT5 account"><div fallback>Advanced MT5 account</div></amp-img>
-                        <h3 class="col-title ft-bold">Advanced MT5 account</h3>
-                        <p>Provides tight spreads, higher ticket size and a variety of FX pairs from majors to exotics. A straight through processing (STP) account with direct access to FX liquidity from various providers.</p>
-                    </div>
-                    <div class="col col-1 col-md"></div>
-                    <div class="col col-3 col-md col-ico">
-                        <amp-img src=/assets/svg/volatility-indices-account.svg width=88 height=88 alt="Volatility Indices MT5 account"><div fallback>Volatility Indices MT5 account</div></amp-img>
-                        <h3 class="col-title ft-bold">Volatility Indices MT5 account</h3>
-                        <p>Allows you to trade CFDs on Volatility Indices – our proprietary synthetic assets that mimic real-world market volatility and are available for trading 24/7.</p>
-                    </div>
-                </div>
-                <p class="mt-40"><a class="button button-xl" href="https://www.binary.com/en/metatrader/types-of-accounts.html">Learn more about MT5 accounts</a></p>
-            </div>
-        </div>
-        <div class="content">
-            <div class="section-row separator-line-thin-gray"></div>
-        </div> 
-        <div id="mt5-account-signup" class="section center-text">
-            <div class="content">
-                <h2 class="section-title primary-color">How to sign up for an MT5 account</h2>
-                <h3 class="section-subtitle">Your MT5 account is optimised to work seamlessly with your Binary.com trading account.</h3>
-                <div class="divider-md md-hide"></div>
-                <div class="grid top-border">
-                    <div class="col col-md col-step">
-                        <div class="step"><amp-img src=/assets/svg/step-1-icon.svg width=40 height=40 alt="Volatility Indices MT5 account"><div fallback>Volatility Indices MT5 account</div></amp-img></div>
-                        <p class="col-title ft-bold">Create a Binary.com account</p>
-                    </div>
-                    <div class="col col-md col-step">
-                        <div class="step"><amp-img src=/assets/svg/step-2-icon.svg width=40 height=40 alt="Volatility Indices MT5 account"><div fallback>Volatility Indices MT5 account</div></amp-img></div>
-                        <p class="col-title ft-bold">Create an MT5 account</p>
-                    </div>
-                    <div class="col col-md col-step">
-                        <div class="step"><amp-img src=/assets/svg/step-3-icon.svg width=40 height=40 alt="Volatility Indices MT5 account"><div fallback>Volatility Indices MT5 account</div></amp-img></div>
-                        <p class="col-title ft-bold">Choose your preferred MT5 account type</p>
-                    </div>
-                    <div class="col col-md col-step">
-                        <div class="step"><amp-img src=/assets/svg/step-4-icon.svg width=40 height=40 alt="Volatility Indices MT5 account"><div fallback>Volatility Indices MT5 account</div></amp-img></div>
-                        <p class="col-title ft-bold">Start trading</p>
-                    </div>
-                </div>
-                <p class="mt-40"><a class="button button-xl" href="https://www.binary.com/en/home.html?account_tabs=mt5&market_tabs=binary">Sign up for free now</a></p>
-            </div>
-        </div>
-        <div id="learn-mt5" class="section-xs fill-bg-color center-text">
-            <div class="content">
-                <h2 class="section-title primary-color">Binary.com MT5 learning materials</h2>
-                <p class="section-subtitle">If you are new to MT5, we have step-by-step tutorials to help you get started:</p>
-                <div class="grid grid-center">
-                    <div class="col col-3 col-md col-ico">
-                        <amp-img src=/assets/svg/trade.svg width=80 height=80 alt="Binary.com How to trade on MT5"><div fallback>Binary.com How to trade on MT5</div></amp-img>
-                        <h2 class="content-color">How to trade on MT5</h2>
-                        <ol class="text-left">
-                            <li>Visit www.binary.com and log in to your account.</li>
-                            <li>Select ‘MetaTrader’ from the top right-hand menu.</li>
-                            <li>On the MetaTrader 5 dashboard, click ’Trade on MT5 web platform’.</li>
-                            <li>Next, log in to your MT5 real account.</li>
-                            <li>Open a new position.</li>
-                            <li>Close your position.</li>
-                            <li>Check your trading history.</li>
-                        </ol>
-                        <p><a href="https://marketing.binary.com/mt5/Binary.com_HowToTradeOnMT5.pdf">Learn more on how to trade on MT5</a></p>
-                    </div>
-                    <div class="col col-1 col-md"></div>
-                    <div class="col col-3 col-md col-ico">
-                        <amp-img src=/assets/svg/funds.svg width=80 height=80 alt="Binary.com How to manage your funds on MT5"><div fallback>Binary.com How to manage your funds on MT5</div></amp-img>
-                        <h2 class="content-color">How to manage your funds on MT5</h2>
-                        <ol class="text-left">
-                            <li>Go to www.binary.com and log in to your account.</li>
-                            <li>On the right-hand side menu, click ‘MetaTrader’.</li>
-                            <li>Select the MT5 real money account you would like to fund.</li>
-                            <li>Transfer funds from your Binary.com account into your MT5 account.</li>
-                            <li>Withdraw funds from your MT5 real money accounts.</li>
-                        </ol>
-                        <p><a href="https://marketing.binary.com/mt5/Binary.com_HowToManageFundsInMetaTrader5.pdf">Learn more on how to manage your funds on MT5</a></p>
-                    </div>
-                    <div class="col col-1 col-md"></div>
-                    <div class="col col-3 col-md col-ico">
-                        <amp-img src=/assets/svg/crypto.svg width=80 height=80 alt="Binary.com How to trade cryptocurrencies on MT5"><div fallback>Binary.com How to trade cryptocurrencies on MT5</div></amp-img>
-                        <h2 class="content-color">How to trade cryptocurrencies on MT5</h2>
-                        <ol class="text-left">
-                            <li>Go to www.binary.com and log in to your account.</li>
-                            <li>Select account and go to your Web Terminal.</li>
-                            <li>Log in to your MT5 account.</li>
-                            <li>Add cryptocurrencies to your Market Watch.</li>
-                            <li>Select any symbol to view the margin rate.</li>
-                            <li>Open a new position.</li>
-                            <li>Close your position.</li>
-                            <li>Check your trading history.</li>
-                        </ol>
-                        <p><a href="https://marketing.binary.com/crypto/Binary.com_HowToTradeCryptocurrenciesOnMT5.pdf">Learn more on how to trade crypto on MT5</a></p>
-                    </div>
-                </div>
-                <p class="mt-40 bottom-xl"><a class="button button-xl" href="https://www.binary.com/en/home.html?account_tabs=mt5&market_tabs=binary">Trade on MT5 Now</a></p>
-             </div>
-        </div>
-        <div class="section-xs primary-bg-color center-text">
-            <div class="content">
-                <h3 class="content-inverse-color">Need further assistance? Connect with us</h3>
-                <div class="grid grid-center">
-                    <div class="col col-3">
-                        <a href="https://www.binary.me/en/contact.html" title="Binary.com Help Centre"><amp-img src=/assets/svg/academy-icon.svg width=50 height=50 alt="Binary.com Help Centre"><div fallback>Binary.com Help Centre</div></amp-img></a>
-                        <p class="content-inverse-color font-s">Help Centre</p>
-                    </div>
-                    <div class="col col-3">
-                        <a href="https://www.facebook.com/binarydotcom" title="Binary.com on Facebook"><amp-img src=/assets/svg/fb-icon.svg width=50 height=50 alt="Binary.com on Facebook" title="Binary.com on Facebook"><div fallback>Binary.com on Facebook</div></amp-img></a>
-                        <p class="content-inverse-color font-s">Facebook</p>
-                    </div>
-                    <div class="col col-3">
-                        <a href="https://t.me/binarydotcom" title="Binary.com on Telegram"><amp-img src=/assets/svg/telegram-icon.svg width=50 height=50 alt="Binary.com on Telegram"><div fallback>Binary.com on Telegram</div></amp-img></a>
-                        <p class="content-inverse-color font-s">Telegram</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
         <button id="scrollToTopButton" on="tap:top-page.scrollTo(duration=200)" class="scrollToTop"><amp-img src=/assets/svg/up-chevron.svg width=15 height=25 alt="page top"><div fallback>page top</div></amp-img></button>
     </body>
 </html>

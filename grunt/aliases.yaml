@@ -12,13 +12,4 @@ default:
   - 'watch'
   
 deploy:
-  - 'stylelint'
-  - 'sass'
-  - 'postcss'
-  - 'cssmin'
-  - 'svgmin'
-  - 'image'
-  - 'copy'
-  - 'includes'
-  - 'htmlmin'
   - 'buildcontrol' 
