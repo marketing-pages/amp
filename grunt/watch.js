@@ -9,7 +9,7 @@ module.exports = function (grunt) {
         tasks: ['stylelint', 'sass', 'postcss', 'cssmin', 'copy', 'includes'],
       },
       images: {
-        files: ['src/assets/images/*'],
+        files: ['src/assets/images/**/*'],
         tasks: ['image'],
       },
       svg: {

@@ -52,7 +52,7 @@
         "name": "Binary.com",
         "logo": {
         "@type": "ImageObject",
-        "url": "https://binaryfx.io/assets/images/binary-icon.png"
+        "url": "https://binarybot.me/assets/images/binary-icon.png"
         }
     },
         "description": "Design your own strategy the way you want with our cutting-edge automated trading platform. Craft from scratch or customise ready-made strategies and let our auto trader do all the work for you. Trade with Binary Bot now."
@@ -94,7 +94,7 @@
         <amp-animation id="hideAnim" layout="nodisplay">
             <script type="application/json">
                 {
-                "duration": "200ms",
+                "duration": "100ms",
                     "fill": "both",
                     "iterations": "1",
                     "direction": "alternate",
@@ -110,54 +110,64 @@
             </script>
         </amp-animation>
         <div id="marker">
-            <amp-position-observer
-                on="enter:hideAnim.start; exit:showAnim.start"
-                layout="nodisplay">
-            </amp-position-observer>
+            <amp-position-observer on="enter:hideAnim.start; exit:showAnim.start" layout="nodisplay"></amp-position-observer>
         </div>
         <div id="page-top"></div>
-
         <amp-sidebar id="sidebar-left" class="page-sidebar" layout="nodisplay" side="left">
-            <button on="tap:sidebar-left.close">Close sidebar</button>
-            <h3>Sidebar</h3>
+            <div class="sidebar-header">
+                <h1>Binary AMP</h1>
+            </div>
                 <ul>
-                    <li><a on="tap:what-is-binary-bot.scrollTo">What is Binary Bot?</a></li>
-                    <li><a on="tap:in-numbers.scrollTo">In numbers</a></li>
-                    <li><a on="tap:advantages.scrollTo">Advantages</a></li>
-                    <li><a on="tap:features.scrollTo">Features</a></li>
-                    <li><a on="tap:how-it-works.scrollTo">How it works</a></li>
-                    <li><a on="tap:strategies.scrollTo">Strategies</a></li>
+                    <li><a on="tap:section-one.scrollTo,sidebar-left.close">What is Binary Bot?</a></li>
+                    <li><a on="tap:section-two.scrollTo,sidebar-left.close">In numbers</a></li>
+                    <li><a on="tap:section-three.scrollTo,sidebar-left.close">Advantages</a></li>
+                    <li><a on="tap:section-four.scrollTo,sidebar-left.close">Features</a></li>
+                    <li><a on="tap:section-five.scrollTo,sidebar-left.close">How it works</a></li>
+                    <li><a on="tap:section-six.scrollTo,sidebar-left.close">Strategies</a></li>
                 </ul>
+                <div class="sidebar-social">
+                    <p>Need further assistance? Connect with us</p>
+                    <div>
+                        <a href="https://www.binary.me/en/contact.html" title="Binary.com Help Centre"><amp-img src=/assets/svg/academy-icon-dark.svg width=40 height=40 alt="Binary.com Help Centre"><div fallback>Binary.com Help Centre</div></amp-img></a>
+                        
+                    </div>
+                    <div>
+                        <a href="https://www.facebook.com/binarydotcom" title="Binary.com on Facebook"><amp-img src=/assets/svg/fb-icon-dark.svg width=40 height=40 alt="Binary.com on Facebook" title="Binary.com on Facebook"><div fallback>Binary.com on Facebook</div></amp-img></a>
+                    </div>
+                    <div>
+                        <a href="https://t.me/binarydotcom" title="Binary.com on Telegram"><amp-img src=/assets/svg/telegram-icon-dark.svg width=40 height=40 alt="Binary.com on Telegram"><div fallback>Binary.com on Telegram</div></amp-img></a>
+                    </div>
+                </div>
         </amp-sidebar>
         
-            <div class="topbar fixed primary-bg-color">
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <div class="logo">
-                                <amp-img src=/assets/svg/binary_logo_light.svg width=250 height=50 alt="Binary.com"><div fallback>Binary.com</div></amp-img>
-                            </div>
-                            <div class="main-nav">
-                                <div class="header-nav">
-                                    <a on="tap:what-is-binary-bot.scrollTo">What is Binary Bot?</a>
-                                    <a on="tap:in-numbers.scrollTo">In numbers</a>
-                                    <a on="tap:advantages.scrollTo">Advantages</a>
-                                    <a on="tap:features.scrollTo">Features</a>
-                                    <a on="tap:how-it-works.scrollTo">How it works</a>
-                                    <a on="tap:strategies.scrollTo">Strategies</a>
-                                </div>
-
-                                <div class="language-nav">
-                                    <span class="active-language language-icon icon-uk "></span>
-                                    <span class="language-divider"></span>
-                                    <a href="/id/"><span class="language-icon icon-id"></span></a>
-                                </div>
-                            </div>
-                            <div role="button" aria-label="open sidebar" on="tap:sidebar-left.toggle" tabindex="0" class="mobile-menu-button">☰</div>
+        <div class="topbar fixed primary-bg-color">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="logo">
+                            <amp-img src=/assets/svg/binary_logo_light.svg width=250 height=50 alt="Binary.com"><div fallback>Binary.com</div></amp-img>
                         </div>
+                        <div class="main-nav">
+                            <div class="header-nav">
+                                <a on="tap:section-one.scrollTo">What is Binary Bot?</a>
+                                <a on="tap:section-two.scrollTo">In numbers</a>
+                                <a on="tap:section-three.scrollTo">Advantages</a>
+                                <a on="tap:section-four.scrollTo">Features</a>
+                                <a on="tap:section-five.scrollTo">How it works</a>
+                                <a on="tap:section-six.scrollTo">Strategies</a>
+                            </div>
+
+                            <div class="language-nav">
+                                <span class="active-language language-icon icon-uk "></span>
+                                <span class="language-divider"></span>
+                                <a href="/id/"><span class="language-icon icon-id"></span></a>
+                            </div>
+                        </div>
+                        <div role="button" aria-label="open sidebar" on="tap:sidebar-left.toggle" tabindex="0" class="mobile-menu-button">☰</div>
                     </div>
                 </div>
             </div>
+        </div>
             
         <div class="header">
             <div class="container">
@@ -174,7 +184,9 @@
                 </div>
             </div>
         </div>
-        <div class="section">
+
+
+        <div id="section-one" class="section section-one">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6">
@@ -187,7 +199,88 @@
                 </div>
             </div>
         </div>
+
+        <div id="section-two" class="section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam arcu mi, hendrerit eget fermentum ut, maximus a mi. Suspendisse tincidunt nisl eu nunc imperdiet, non euismod nulla ornare. Donec ultrices neque enim, quis scelerisque ante iaculis vel. Nam tincidunt justo ante, ac cursus felis malesuada sed. Proin vitae sollicitudin lacus. Aliquam eleifend metus quis metus dapibus porttitor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam accumsan nunc sit amet ligula eleifend, in eleifend turpis sagittis. Nulla sagittis nisi aliquam metus eleifend, at tincidunt elit accumsan. Nulla at nulla sed magna vestibulum vulputate vitae sit amet augue. Fusce quam elit, varius sit amet justo sit amet, congue tempus enim. Vestibulum euismod rhoncus leo a volutpat. Aliquam laoreet sodales mi.</p>
+
+                        <p>Nam varius lorem vulputate, venenatis augue sollicitudin, maximus nisi. Nam volutpat quam id nisl fringilla, eget tincidunt quam molestie. Integer aliquam mollis sapien luctus placerat. Sed suscipit nulla id aliquet elementum. Nam molestie eleifend dui, nec feugiat arcu elementum vitae. Mauris congue tellus nec tellus elementum congue. Maecenas posuere quis ligula eget tincidunt. Vivamus id ultricies dui, id elementum augue. Morbi mi tortor, bibendum id faucibus quis, bibendum tempor arcu. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut fringilla ex et turpis placerat, nec feugiat enim tempus. Nullam et tempor purus. Phasellus sed nulla orci.</p>
+                        
+                        <p>Quisque gravida mattis enim, eu porta dolor sollicitudin id. Vestibulum luctus rhoncus urna quis sodales. Nulla justo metus, mollis sed turpis ac, iaculis ullamcorper velit. Integer eget faucibus tortor, ullamcorper accumsan urna. Morbi ante felis, porttitor id tempor eu, suscipit sit amet turpis. Morbi blandit nulla ex, id rhoncus enim ultricies sit amet. Ut in mauris id nisi tincidunt malesuada. Donec rhoncus ut massa sed pretium. Suspendisse aliquet purus eget sem tincidunt commodo id quis ligula. Duis eget urna odio. Vestibulum auctor vestibulum ex, a bibendum nisl feugiat malesuada. Aenean malesuada magna at maximus cursus.</p>
+                        
+                        <p>Proin fermentum augue venenatis, ornare nibh nec, porttitor dui. Mauris tempus lectus et quam facilisis pretium. Vestibulum pharetra lectus sit amet mauris pellentesque rutrum. Sed sed auctor magna. Phasellus porttitor lacinia ipsum, sit amet tempor augue tempor pharetra. Maecenas semper nibh id lorem posuere, egestas pellentesque lectus efficitur. Morbi magna eros, volutpat eget odio eget, lacinia lobortis risus. Pellentesque et nisi non sem lacinia pulvinar quis nec erat. Sed convallis nibh eu nisi condimentum aliquam. Quisque eleifend magna neque, ut varius nibh malesuada non. Nam id urna ac metus pharetra aliquet vel nec risus. Quisque aliquam finibus tortor, ut ullamcorper dui. Cras laoreet varius consectetur. Cras ac mollis arcu.</p>
+                        
+                        <p>Sed eget posuere erat. Duis at lorem varius, eleifend nisl ut, pharetra nunc. Aliquam erat volutpat. Pellentesque accumsan risus eu metus feugiat egestas. Phasellus faucibus accumsan urna, et rhoncus odio. Vivamus in dolor a justo dapibus auctor vitae sit amet metus. Cras porta a sem eu pellentesque. Mauris luctus augue non odio commodo, a condimentum augue venenatis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="section-three" class="section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam arcu mi, hendrerit eget fermentum ut, maximus a mi. Suspendisse tincidunt nisl eu nunc imperdiet, non euismod nulla ornare. Donec ultrices neque enim, quis scelerisque ante iaculis vel. Nam tincidunt justo ante, ac cursus felis malesuada sed. Proin vitae sollicitudin lacus. Aliquam eleifend metus quis metus dapibus porttitor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam accumsan nunc sit amet ligula eleifend, in eleifend turpis sagittis. Nulla sagittis nisi aliquam metus eleifend, at tincidunt elit accumsan. Nulla at nulla sed magna vestibulum vulputate vitae sit amet augue. Fusce quam elit, varius sit amet justo sit amet, congue tempus enim. Vestibulum euismod rhoncus leo a volutpat. Aliquam laoreet sodales mi.</p>
+
+                        <p>Nam varius lorem vulputate, venenatis augue sollicitudin, maximus nisi. Nam volutpat quam id nisl fringilla, eget tincidunt quam molestie. Integer aliquam mollis sapien luctus placerat. Sed suscipit nulla id aliquet elementum. Nam molestie eleifend dui, nec feugiat arcu elementum vitae. Mauris congue tellus nec tellus elementum congue. Maecenas posuere quis ligula eget tincidunt. Vivamus id ultricies dui, id elementum augue. Morbi mi tortor, bibendum id faucibus quis, bibendum tempor arcu. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut fringilla ex et turpis placerat, nec feugiat enim tempus. Nullam et tempor purus. Phasellus sed nulla orci.</p>
+                        
+                        <p>Quisque gravida mattis enim, eu porta dolor sollicitudin id. Vestibulum luctus rhoncus urna quis sodales. Nulla justo metus, mollis sed turpis ac, iaculis ullamcorper velit. Integer eget faucibus tortor, ullamcorper accumsan urna. Morbi ante felis, porttitor id tempor eu, suscipit sit amet turpis. Morbi blandit nulla ex, id rhoncus enim ultricies sit amet. Ut in mauris id nisi tincidunt malesuada. Donec rhoncus ut massa sed pretium. Suspendisse aliquet purus eget sem tincidunt commodo id quis ligula. Duis eget urna odio. Vestibulum auctor vestibulum ex, a bibendum nisl feugiat malesuada. Aenean malesuada magna at maximus cursus.</p>
+                        
+                        <p>Proin fermentum augue venenatis, ornare nibh nec, porttitor dui. Mauris tempus lectus et quam facilisis pretium. Vestibulum pharetra lectus sit amet mauris pellentesque rutrum. Sed sed auctor magna. Phasellus porttitor lacinia ipsum, sit amet tempor augue tempor pharetra. Maecenas semper nibh id lorem posuere, egestas pellentesque lectus efficitur. Morbi magna eros, volutpat eget odio eget, lacinia lobortis risus. Pellentesque et nisi non sem lacinia pulvinar quis nec erat. Sed convallis nibh eu nisi condimentum aliquam. Quisque eleifend magna neque, ut varius nibh malesuada non. Nam id urna ac metus pharetra aliquet vel nec risus. Quisque aliquam finibus tortor, ut ullamcorper dui. Cras laoreet varius consectetur. Cras ac mollis arcu.</p>
+                        
+                        <p>Sed eget posuere erat. Duis at lorem varius, eleifend nisl ut, pharetra nunc. Aliquam erat volutpat. Pellentesque accumsan risus eu metus feugiat egestas. Phasellus faucibus accumsan urna, et rhoncus odio. Vivamus in dolor a justo dapibus auctor vitae sit amet metus. Cras porta a sem eu pellentesque. Mauris luctus augue non odio commodo, a condimentum augue venenatis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="section-four" class="section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam arcu mi, hendrerit eget fermentum ut, maximus a mi. Suspendisse tincidunt nisl eu nunc imperdiet, non euismod nulla ornare. Donec ultrices neque enim, quis scelerisque ante iaculis vel. Nam tincidunt justo ante, ac cursus felis malesuada sed. Proin vitae sollicitudin lacus. Aliquam eleifend metus quis metus dapibus porttitor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam accumsan nunc sit amet ligula eleifend, in eleifend turpis sagittis. Nulla sagittis nisi aliquam metus eleifend, at tincidunt elit accumsan. Nulla at nulla sed magna vestibulum vulputate vitae sit amet augue. Fusce quam elit, varius sit amet justo sit amet, congue tempus enim. Vestibulum euismod rhoncus leo a volutpat. Aliquam laoreet sodales mi.</p>
+
+                        <p>Nam varius lorem vulputate, venenatis augue sollicitudin, maximus nisi. Nam volutpat quam id nisl fringilla, eget tincidunt quam molestie. Integer aliquam mollis sapien luctus placerat. Sed suscipit nulla id aliquet elementum. Nam molestie eleifend dui, nec feugiat arcu elementum vitae. Mauris congue tellus nec tellus elementum congue. Maecenas posuere quis ligula eget tincidunt. Vivamus id ultricies dui, id elementum augue. Morbi mi tortor, bibendum id faucibus quis, bibendum tempor arcu. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut fringilla ex et turpis placerat, nec feugiat enim tempus. Nullam et tempor purus. Phasellus sed nulla orci.</p>
+                        
+                        <p>Quisque gravida mattis enim, eu porta dolor sollicitudin id. Vestibulum luctus rhoncus urna quis sodales. Nulla justo metus, mollis sed turpis ac, iaculis ullamcorper velit. Integer eget faucibus tortor, ullamcorper accumsan urna. Morbi ante felis, porttitor id tempor eu, suscipit sit amet turpis. Morbi blandit nulla ex, id rhoncus enim ultricies sit amet. Ut in mauris id nisi tincidunt malesuada. Donec rhoncus ut massa sed pretium. Suspendisse aliquet purus eget sem tincidunt commodo id quis ligula. Duis eget urna odio. Vestibulum auctor vestibulum ex, a bibendum nisl feugiat malesuada. Aenean malesuada magna at maximus cursus.</p>
+                        
+                        <p>Proin fermentum augue venenatis, ornare nibh nec, porttitor dui. Mauris tempus lectus et quam facilisis pretium. Vestibulum pharetra lectus sit amet mauris pellentesque rutrum. Sed sed auctor magna. Phasellus porttitor lacinia ipsum, sit amet tempor augue tempor pharetra. Maecenas semper nibh id lorem posuere, egestas pellentesque lectus efficitur. Morbi magna eros, volutpat eget odio eget, lacinia lobortis risus. Pellentesque et nisi non sem lacinia pulvinar quis nec erat. Sed convallis nibh eu nisi condimentum aliquam. Quisque eleifend magna neque, ut varius nibh malesuada non. Nam id urna ac metus pharetra aliquet vel nec risus. Quisque aliquam finibus tortor, ut ullamcorper dui. Cras laoreet varius consectetur. Cras ac mollis arcu.</p>
+                        
+                        <p>Sed eget posuere erat. Duis at lorem varius, eleifend nisl ut, pharetra nunc. Aliquam erat volutpat. Pellentesque accumsan risus eu metus feugiat egestas. Phasellus faucibus accumsan urna, et rhoncus odio. Vivamus in dolor a justo dapibus auctor vitae sit amet metus. Cras porta a sem eu pellentesque. Mauris luctus augue non odio commodo, a condimentum augue venenatis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="section-five" class="section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam arcu mi, hendrerit eget fermentum ut, maximus a mi. Suspendisse tincidunt nisl eu nunc imperdiet, non euismod nulla ornare. Donec ultrices neque enim, quis scelerisque ante iaculis vel. Nam tincidunt justo ante, ac cursus felis malesuada sed. Proin vitae sollicitudin lacus. Aliquam eleifend metus quis metus dapibus porttitor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam accumsan nunc sit amet ligula eleifend, in eleifend turpis sagittis. Nulla sagittis nisi aliquam metus eleifend, at tincidunt elit accumsan. Nulla at nulla sed magna vestibulum vulputate vitae sit amet augue. Fusce quam elit, varius sit amet justo sit amet, congue tempus enim. Vestibulum euismod rhoncus leo a volutpat. Aliquam laoreet sodales mi.</p>
+
+                        <p>Nam varius lorem vulputate, venenatis augue sollicitudin, maximus nisi. Nam volutpat quam id nisl fringilla, eget tincidunt quam molestie. Integer aliquam mollis sapien luctus placerat. Sed suscipit nulla id aliquet elementum. Nam molestie eleifend dui, nec feugiat arcu elementum vitae. Mauris congue tellus nec tellus elementum congue. Maecenas posuere quis ligula eget tincidunt. Vivamus id ultricies dui, id elementum augue. Morbi mi tortor, bibendum id faucibus quis, bibendum tempor arcu. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut fringilla ex et turpis placerat, nec feugiat enim tempus. Nullam et tempor purus. Phasellus sed nulla orci.</p>
+                        
+                        <p>Quisque gravida mattis enim, eu porta dolor sollicitudin id. Vestibulum luctus rhoncus urna quis sodales. Nulla justo metus, mollis sed turpis ac, iaculis ullamcorper velit. Integer eget faucibus tortor, ullamcorper accumsan urna. Morbi ante felis, porttitor id tempor eu, suscipit sit amet turpis. Morbi blandit nulla ex, id rhoncus enim ultricies sit amet. Ut in mauris id nisi tincidunt malesuada. Donec rhoncus ut massa sed pretium. Suspendisse aliquet purus eget sem tincidunt commodo id quis ligula. Duis eget urna odio. Vestibulum auctor vestibulum ex, a bibendum nisl feugiat malesuada. Aenean malesuada magna at maximus cursus.</p>
+                        
+                        <p>Proin fermentum augue venenatis, ornare nibh nec, porttitor dui. Mauris tempus lectus et quam facilisis pretium. Vestibulum pharetra lectus sit amet mauris pellentesque rutrum. Sed sed auctor magna. Phasellus porttitor lacinia ipsum, sit amet tempor augue tempor pharetra. Maecenas semper nibh id lorem posuere, egestas pellentesque lectus efficitur. Morbi magna eros, volutpat eget odio eget, lacinia lobortis risus. Pellentesque et nisi non sem lacinia pulvinar quis nec erat. Sed convallis nibh eu nisi condimentum aliquam. Quisque eleifend magna neque, ut varius nibh malesuada non. Nam id urna ac metus pharetra aliquet vel nec risus. Quisque aliquam finibus tortor, ut ullamcorper dui. Cras laoreet varius consectetur. Cras ac mollis arcu.</p>
+                        
+                        <p>Sed eget posuere erat. Duis at lorem varius, eleifend nisl ut, pharetra nunc. Aliquam erat volutpat. Pellentesque accumsan risus eu metus feugiat egestas. Phasellus faucibus accumsan urna, et rhoncus odio. Vivamus in dolor a justo dapibus auctor vitae sit amet metus. Cras porta a sem eu pellentesque. Mauris luctus augue non odio commodo, a condimentum augue venenatis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="section-six" class="section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col">
+                    </div>
+                </div>
+            </div>
+        </div>
         
-        <button id="scrollToTopButton" on="tap:top-page.scrollTo(duration=200)" class="scrollToTop"><amp-img src=/assets/svg/up-chevron.svg width=15 height=25 alt="page top"><div fallback>page top</div></amp-img></button>
+        <button id="scrollToTopButton" on="tap:page-top.scrollTo(duration=200)" class="scrollToTop"><amp-img src=/assets/svg/up-chevron.svg width=15 height=25 alt="page top"><div fallback>page top</div></amp-img></button>
     </body>
 </html>

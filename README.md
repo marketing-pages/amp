@@ -10,7 +10,7 @@ You'll want to ensure you have the following already installed on your local mac
 
 #### Installation
 
-Go to project root, then run `npm install`.
+Go to project root, then run `npm install`
 
 
 

@@ -10,7 +10,7 @@ module.exports = {
             livereload: true,
         },
         files: {
-            files: ['src/**/*.*'],
+            files: ['src/**/**/*'],
         }
     },
 };
