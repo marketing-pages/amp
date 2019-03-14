@@ -6,7 +6,7 @@ You'll want to ensure you have the following already installed on your local mac
 
 - **Node & NPM:** The current LTS (long-term support) release.
 
-- **Grunt:** `sudo npm install -g grunt-cli`
+- **Grunt:** Install Grunt CLI as global `sudo npm install -g grunt-cli`
 
 #### Installation
 
