@@ -8,6 +8,10 @@ You'll want to ensure you have the following already installed on your local mac
 
 - **Grunt:** `sudo npm install -g grunt-cli`
 
+---
+
+#### Installation
+
 Go to project root, then run `npm install`.
 
 
